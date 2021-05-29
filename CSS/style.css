@@ -1,4 +1,41 @@
 body {
   background-color: antiquewhite;
 }
+
+body main {
+  background-color: #fff;
+  width: 400px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[6];
+      grid-template-rows: repeat(6, 1fr);
+}
+
+body main .button-operation, body main .button-number {
+  width: 80px;
+  height: 40px;
+  border: 1px solid grey;
+  text-align: center;
+}
+
+body main .screen {
+  grid-column: span 4;
+  height: 40px;
+  border: 1px solid grey;
+}
+
+body main .getResult {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3/7;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  border: 1px solid grey;
+  width: 80px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
