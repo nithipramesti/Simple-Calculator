@@ -1,30 +1,36 @@
 body {
+  font-family: sans-serif;
   background-color: antiquewhite;
 }
 
 body main {
   background-color: #fff;
-  width: 400px;
-  height: 500px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[6];
-      grid-template-rows: repeat(6, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 420px;
+  -ms-grid-columns: (80px)[4];
+      grid-template-columns: repeat(4, 80px);
+  -ms-grid-rows: (50px)[6];
+      grid-template-rows: repeat(6, 50px);
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  row-gap: 15px;
+  padding: 40px 0;
 }
 
 body main .button-operation, body main .button-number {
-  width: 80px;
-  height: 40px;
-  border: 1px solid grey;
+  border: 2px solid grey;
   text-align: center;
+  line-height: 50px;
 }
 
 body main .screen {
   grid-column: span 4;
-  height: 40px;
-  border: 1px solid grey;
+  border: 2px solid grey;
+  margin: 0;
 }
 
 body main .getResult {
@@ -34,8 +40,8 @@ body main .getResult {
   -ms-grid-column: 4;
   -ms-grid-column-span: 1;
   grid-column: 4/5;
-  border: 1px solid grey;
-  width: 80px;
+  border: 2px solid grey;
   text-align: center;
+  line-height: 245px;
 }
 /*# sourceMappingURL=style.css.map */

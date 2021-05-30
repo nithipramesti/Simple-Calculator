@@ -1,33 +1,36 @@
 body{
+    font-family: sans-serif;
     background-color: antiquewhite;
 
     main{
         background-color: #fff;
-        width: 400px;
-        height: 500px;
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6,1fr);
+        justify-content: center;
+        width: 420px;
+        grid-template-columns: repeat(4, 80px);
+        grid-template-rows: repeat(6, 50px);
+        column-gap: 15px;
+        row-gap: 15px;
+        padding: 40px 0;
 
         .button-operation, .button-number{
-            width: 80px;
-            height: 40px;
-            border: 1px solid grey;
+            border: 2px solid grey;
             text-align: center;
+            line-height: 50px;
         }
 
         .screen{
             grid-column: span 4;
-            height: 40px;
-            border: 1px solid grey;
+            border: 2px solid grey;
+            margin: 0;
         }
 
         .getResult{
             grid-row: 3/7;
             grid-column: 4/5;
-            border: 1px solid grey;
-            width: 80px;
+            border: 2px solid grey;
             text-align: center;
+            line-height: 245px;
         }
     }
 }
